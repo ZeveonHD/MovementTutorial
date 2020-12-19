@@ -21,7 +21,7 @@ public class CameraMovement : MonoBehaviour
         float inputX = Input.GetAxisRaw("Mouse X");
         float inputY = Input.GetAxisRaw("Mouse Y");
 
-        currentY -= inputY;
+        currentY -= inputY * Time.deltaTime * sens;
         currentY = Mathf.Clamp(currentY, -90, 90);
 
         if (currentY < -90)
