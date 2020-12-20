@@ -488,7 +488,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.8
+  m_Height: 1.55
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -590,7 +590,13 @@ MonoBehaviour:
   jumpPower: 10
   gravityFactor: -9.81
   currentVelY: 0
+  isSprinting: 0
+  sprintingMultiplier: 3
+  isCrouching: 0
+  crouchingMulitplier: 0.5
   controller: {fileID: 0}
+  standingHeight: 1.8
+  crouchingHeight: 1.25
   groundMask:
     serializedVersion: 2
     m_Bits: 256
